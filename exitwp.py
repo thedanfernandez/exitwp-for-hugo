@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!python3
 
 import codecs
 import os
@@ -289,7 +289,7 @@ def write_jekyll(data, target_format):
         sys.stdout.write('.')
         sys.stdout.flush()
         out = None
-		
+
         item_url = urlparse(i['link'])        # AW!!: Store item url for later url path relative
         yaml_header = {
             'title': i['title'],

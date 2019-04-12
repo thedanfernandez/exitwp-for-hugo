@@ -417,8 +417,8 @@ class _html2text(HTMLParser.HTMLParser):
 		# For my website I decided to remove the <em> and <strong> tags, but you can fill it in
         if self.pre and not tag == "pre":
             if start:
-				if tag in ['em', 'i', 'u']: self.o("")    # "_"
-				elif tag in ['strong', 'b']: self.o("")   # "**"
+                if tag in ['em', 'i', 'u']: self.o("")    # "_"
+                elif tag in ['strong', 'b']: self.o("")   # "**"
 				else:
 					attrs_string = ""
 					for k, v in attrs.items():
@@ -429,7 +429,7 @@ class _html2text(HTMLParser.HTMLParser):
 				elif tag in ['strong', 'b']: self.o("")
 				else:
 					self.o("</"+tag+">")
-					
+
             return None
 
         if options.google_doc:
